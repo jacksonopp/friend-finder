@@ -1,19 +1,26 @@
 async function getValues() {
-    console.log("click");
-    const scores = []
-    document.querySelectorAll(".survey-select").forEach((question) => {
-        const result = question.options[question.selectedIndex].value;
-        scores.push(result);
-    })
     const name = document.getElementById("name").value;
-    console.log(name);
     const photo = document.getElementById("photo").value;
-    console.log(photo);
+    if (name === "" || photo === "") {
+        document.getElementById("name-title").innerText = "Please enter your name and a link to your photograph";
+        const photo = document.getElementById("match-picture");
+        photo.setAttribute("src", "https://images.unsplash.com/photo-1529117332242-b597eb0848db?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1949&q=80");
+        photo.setAttribute("alt", `a photo of a sad pug`);
+    } else {
+        console.log("click");
+        console.log(name);
+        console.log(photo);
+        const scores = []
+        document.querySelectorAll(".survey-select").forEach((question) => {
+            const result = question.options[question.selectedIndex].value;
+            scores.push(result);
+        })
 
-    await axios.post("/api/friends", { name, photo, scores })
-        .then(response => response)
-        .catch(err => console.log(err));
-    await modal();
+        await axios.post("/api/friends", { name, photo, scores })
+            .then(response => response)
+            .catch(err => console.log(err));
+        await modal();
+    }
 }
 const modal = () => {
     axios.get("/api/friends").then((response) => {
