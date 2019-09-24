@@ -1,7 +1,7 @@
 const friends = [
     {
         "name": "Ahmed",
-        "photo": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+        "photo": "https://www.fillmurray.com/200/300",
         "scores": [
             5,
             1,
@@ -17,7 +17,7 @@ const friends = [
     },
     {
         "name": "Bob",
-        "photo": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+        "photo": "https://www.fillmurray.com/200/300",
         "scores": [
             1,
             1,
@@ -33,7 +33,7 @@ const friends = [
     },
     {
         "name": "Moses",
-        "photo": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+        "photo": "https://www.fillmurray.com/200/300",
         "scores": [
             4,
             6,
