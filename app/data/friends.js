@@ -17,7 +17,7 @@ const friends = [
     },
     {
         "name": "Bob",
-        "photo": "https://www.fillmurray.com/200/300",
+        "photo": "https://www.fillmurray.com/500/900",
         "scores": [
             1,
             1,
@@ -33,7 +33,7 @@ const friends = [
     },
     {
         "name": "Moses",
-        "photo": "https://www.fillmurray.com/200/300",
+        "photo": "https://www.fillmurray.com/455/643",
         "scores": [
             4,
             6,

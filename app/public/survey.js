@@ -66,7 +66,7 @@ const calculate = (data) => {
 
     console.log("#@($*&@#(*$&@#(*$&#@(*$&@#(*&$@#($*&", match);
 
-    document.getElementById("name-title").innerText = match.name;
+    document.getElementById("name-title").innerText = "Your new best friend is " + match.name;
     const photo = document.getElementById("match-picture");
     photo.setAttribute("src", match.photo);
     photo.setAttribute("alt", `a photo of ${match.name}`);
