@@ -8,13 +8,15 @@ const results = require("../app/public/survey");
 const friends = require("../app/data/friends");
 
 router.post("/api/friends", (req, res) => {
-    console.log(req.body)
-    res.send(calculate);
+    console.log(calculate);
+    matchName = calculate.name;
+    matchURL = calculate;
+    res.send(matchName);
     friends.push(req.body);
 })
 
 router.get("/api/friends", (req, res) => {
-    res.send(friends);
+    res.send("friends");
 })
 
 module.exports = router;

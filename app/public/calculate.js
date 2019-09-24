@@ -1,6 +1,7 @@
 const friends = require("../data/friends");
+const axios = require("axios");
 
-const user = friends[1];
+const user = friends.slice(-1)[0];
 const userScore = user.scores;
 scoresList = [];
 
@@ -35,7 +36,4 @@ const match = scoresList.find(match => match.difference === getMinScore());
 
 console.log(match);
 
-module.exports = {
-    match,
-    user,
-};
+module.exports = match
