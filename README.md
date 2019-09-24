@@ -42,11 +42,12 @@ project
         |   survey.js - this contains the logic for taking in the survey results and POSTing them to the RESTful API.
 
 └───views
+    │   index.handlebars - this contains the welcome page
+    |   survey.handlebars - this contains the markup for the survey
+    |
     └───layouts
         |   main.handlebars - this is the main handlebars layout page
 
-    │   index.handlebars - this contains the welcome page
-    |   survey.handlebars - this contains the markup for the survey
 
 ```
 
