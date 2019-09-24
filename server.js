@@ -23,6 +23,10 @@ app.set("view engine", "handlebars");
 app.use(htmlRoutes);
 app.use(apiRoutes);
 
+app.get("*", (req, res) => {
+    res.redirect("/");
+})
+
 // Start our server so that it can begin listening to client requests.
 app.listen(PORT, function () {
     // Log (server-side) when our server has started
