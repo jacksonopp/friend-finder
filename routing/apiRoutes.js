@@ -10,13 +10,13 @@ const friends = require("../app/data/friends");
 router.post("/api/friends", (req, res) => {
     console.log(calculate);
     matchName = calculate.name;
-    matchURL = calculate;
-    res.send(matchName);
+    matchURL = calculate.photo;
+    res.render("survey", { calculate });
     friends.push(req.body);
 })
 
 router.get("/api/friends", (req, res) => {
-    res.send("friends");
+    res.send(friends);
 })
 
 module.exports = router;
