@@ -49,3 +49,7 @@ project
     |   survey.handlebars - this contains the markup for the survey
 
 ```
+
+#### License
+
+This application is under the MIT licence.
